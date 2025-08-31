@@ -4,6 +4,7 @@ import { Search, Coins, ChevronLeft, ChevronRight, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useState, useEffect } from "react"
+import Link from "next/link"
 
 const causes = [
   {
@@ -75,15 +76,15 @@ export default function HomePage() {
         <nav className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="text-lg font-semibold text-foreground">Be Satoshi</div>
           <div className="flex items-center gap-8">
-            <a
+            <Link
               href="/"
               className="text-foreground hover:text-accent transition-colors font-medium border-b-2 border-primary pb-1"
             >
               Search
-            </a>
-            <a href="/explore" className="text-muted-foreground hover:text-accent transition-colors font-medium">
+            </Link>
+            <Link href="/explore" className="text-muted-foreground hover:text-accent transition-colors font-medium">
               Explore Causes
-            </a>
+            </Link>
           </div>
         </nav>
       </header>
