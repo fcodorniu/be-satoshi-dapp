@@ -84,6 +84,9 @@ export default function HomePage() {
             <a href="/explore" className="text-muted-foreground hover:text-accent transition-colors font-medium">
               Explore Causes
             </a>
+            <a href="/profile" className="text-muted-foreground hover:text-accent transition-colors font-medium">
+              Profile
+            </a>
           </div>
         </nav>
       </header>
