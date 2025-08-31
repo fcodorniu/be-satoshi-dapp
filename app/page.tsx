@@ -4,6 +4,7 @@ import { Search, Coins, ChevronLeft, ChevronRight, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useState, useEffect } from "react"
+import { Header } from "@/components/Header"
 import Link from "next/link"
 
 const causes = [
@@ -71,23 +72,9 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Header */}
-      <header className="w-full px-6 py-4">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto">
-          <div className="text-lg font-semibold text-foreground">Be Satoshi</div>
-          <div className="flex items-center gap-8">
-            <Link
-              href="/"
-              className="text-foreground hover:text-accent transition-colors font-medium border-b-2 border-primary pb-1"
-            >
-              Search
-            </Link>
-            <Link href="/explore" className="text-muted-foreground hover:text-accent transition-colors font-medium">
-              Explore Causes
-            </Link>
-          </div>
-        </nav>
-      </header>
+  
+        <Header />
+
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col items-center justify-center px-6 -mt-16">
